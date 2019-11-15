@@ -1,0 +1,39 @@
+.newdesign {
+    display: flex;
+
+    .newdesign-container {
+        margin: 191px 150px 166px;
+        width: 64%;
+
+        :first-child {
+            margin-bottom: 25px;
+        }
+        
+        h3 {
+            margin: 16px 0 45px;    
+        }
+
+    }
+
+    .polygon {
+        width: 35%;
+        position: relative;
+        overflow: hidden;
+        background: url("../img/maxresdefault.jpg") no-repeat center/cover #ededed;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .newdesign {
+
+        .newdesign-container {
+            width: 100%;
+            margin: 70px 30px;
+        }
+
+        .polygon {
+            display: none;
+        }
+    }
+}

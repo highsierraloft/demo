@@ -1,0 +1,114 @@
+.partner {
+    background: url("../img/partner-bg.png") no-repeat center/cover;
+    padding: 70px 0 50px;
+
+    .partner-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: baseline;
+        width: 100%;
+
+        div:nth-child(1) {
+            a {
+                background: url("../img/5.png") center/cover #4e4e5e;
+            }
+        }
+
+        div:nth-child(2) {
+            margin: 0 20px;
+
+            a {
+                background: url("../img/2.jpg") center/cover #4e4e5e;
+            }
+        }
+
+        div:nth-child(3) {
+            a {
+                background: url("../img/2.png") center/cover #4e4e5e;
+            }
+        }
+        
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 250px;
+            min-width: 150px;
+
+
+            a {
+                width: 150px;
+                height: 150px;
+                border: 2px solid #1d1e24;
+                margin-bottom: 26px;
+                cursor: pointer;
+
+            }
+
+            h5 {
+                color: #ffffff;
+                font-size: 22px;
+                font-weight: 500;
+                letter-spacing: 0.88px;
+            }
+
+            h6 {
+                color: #ff6d6d;
+                font-size: 16px;
+                font-weight: 500;
+                margin: 12px 0 37px;
+            }
+
+            p {
+                opacity: 0.66;
+                color: #ffffff;
+                font-style: italic;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 660px) {
+
+    .partner { 
+        padding: 50px 0 40px; 
+
+        .partner-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            div {
+                min-width: 250px;
+                max-width: 400px;
+            }
+
+            div:nth-child(2) {
+                margin: 50px 0;
+            }
+        }
+    }
+} 
+
+@media (max-width: 400px) {
+
+    .partner { 
+
+        .partner-container {
+
+            div {
+                margin: 0 20px;
+            }
+
+            div:nth-child(2) {
+                margin: 50px 20px;
+            }
+        }
+    }
+}   
+    

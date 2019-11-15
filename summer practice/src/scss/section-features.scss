@@ -1,0 +1,126 @@
+.features {
+    background-color: #f6f5f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    background:
+    url("../img/feature-posimg1.png") 82px 0 no-repeat,
+    url("../img/feature-posimg2.png") right 164px top -9px no-repeat;
+    background-color: #f6f5f3;
+    
+    h4 {
+        text-align: center;
+    }
+    
+    h4:first-child {
+        margin: 138px 0 15px;
+    }
+    
+    .features-container {
+        display: flex;
+        justify-content: center;
+        align-items: space-between;
+        flex-wrap: wrap;
+        margin: 91px 170px 0;
+
+        h5 {
+        margin: 95px 0 19px;
+        }
+
+        p {
+            margin-bottom: 185px;
+            text-align: center;
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 300px;
+            max-width: 350px;
+            flex-wrap: wrap;
+        }
+        
+        // div:nth-child(2) {
+        //     margin: 0 48px;
+        // }
+        
+
+        div:nth-child(1) {
+            background: url("../img/feature-img1.png") no-repeat center top;
+        }
+
+        div:nth-child(2) {
+            background: url("../img/feature-img2.png") no-repeat center top;
+        }
+
+        div:nth-child(3) {
+            background: url("../img/feature-img3.png") no-repeat center top;
+        }
+    }
+    
+}
+
+@media (max-width: 500px) {
+
+    .features {
+        h3 {
+            font-size: 35px;
+        }
+    }  
+}
+
+@media (max-width: 425px) {
+
+    .features {
+        h3 {
+            font-size: 30px;
+        }
+    }  
+}
+
+@media (max-width: 370px) {
+
+    .features {
+        h3 {
+            font-size: 25px;
+        }
+    }  
+}
+
+@media (max-width: 1000px) {
+
+    .features {
+
+        h4:first-child {
+            margin: 200px 0 15px;
+        }
+    }  
+}
+
+@media (max-width: 1389px) {
+
+    .features {
+    
+        .features-container {
+            
+            p {
+                margin-bottom: 40px;
+            }
+        }
+    }  
+}
+
+@media (max-width: 850px) {
+
+    .features {
+    background: 
+    url("../img/feature-posimg1.png") -1000px -9999px no-repeat,
+    url("../img/feature-posimg2.png") right top -20px no-repeat,
+    url("../img/feature-posimg3.png") bottom -1000px right -1000px no-repeat;
+    background-color: #f6f5f3;
+    }  
+}
+

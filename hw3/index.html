@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: calc(100vh - 30px);
+        }
+
+        select {
+            margin: 15px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <div>
+            <input type="number" id="inputValue">
+            <select id="currencySelectSell">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="RUB">RUB</option>
+                <option value="NOK">NOK</option>
+                <option value="GBP">GBP</option>
+                <option value="DKK">DKK</option>
+                <option value="CAD">CAD</option>
+            </select>
+        </div>
+        <div>
+            <input type="number" id="outputValue" disabled>
+            <select id="currencySelectBuy">
+                <option value="EUR">EUR</option>
+                <option value="USD">USD</option>
+                <option value="RUB">RUB</option>
+                <option value="NOK">NOK</option>
+                <option value="GBP">GBP</option>
+                <option value="DKK">DKK</option>
+                <option value="CAD">CAD</option>
+            </select>
+        </div>
+        <button type="button" id="subBtn">Send</button>
+    </form>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
